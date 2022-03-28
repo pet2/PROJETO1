@@ -1,0 +1,75 @@
+.header, .footer, .sidenav{
+    border: solid 2px green;
+    
+}
+.header{
+    grid-area: header;
+    display: flex;
+    background-color: khaki;
+}
+.header > img{
+    max-height: 90%;
+}
+.footer{
+    grid-area: footer;
+    background-color: lightgray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.conteudo{
+    grid-area: conteudo;
+
+}
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas: 
+        "header header"
+        "sidenav conteudo"
+        "footer footer";
+    margin: 0;
+    
+}
+.items-menu{
+    
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.blocos{
+    background-color: aliceblue;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.items-blocos{
+    border: solid 2px blue;
+    border-radius: 10px;
+    height: 200px;
+    min-width: 300px;
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menu-superior{
+    
+    display: flex;
+
+}
+.menu-cabeçalho{
+    flex: 1;
+    background-color: khaki;
+    display: flex;
+    justify-content: space-between;
+}
+.conteudo{
+    border: solid 2px green;
+    
+}
+.sidenav{
+    background-color: darkgray
+}
